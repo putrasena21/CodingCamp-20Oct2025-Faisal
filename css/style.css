@@ -1,0 +1,77 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.nav-link.active {
+	color: #3b82f6;
+	border-bottom: 2px solid #3b82f6;
+}
+
+.certificate-card:hover,
+.portfolio-card:hover {
+	transform: translateY(-5px);
+	transition: transform 0.3s ease;
+}
+
+.image-profile {
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	box-shadow: 0 4px 8px rgba(203, 18, 18, 0.2);
+}
+
+/* Smooth transitions */
+.hidden {
+	display: none;
+}
+
+/* Mobile menu animation */
+#mobileMenu {
+	transition: all 0.3s ease-in-out;
+}
+
+/* Welcome message animations */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes wave {
+	0%,
+	100% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(20deg);
+	}
+	75% {
+		transform: rotate(-20deg);
+	}
+}
+
+.animate-fade-in {
+	animation: fadeIn 0.6s ease-out;
+}
+
+.animate-wave {
+	display: inline-block;
+	animation: wave 1s ease-in-out infinite;
+}
+
+.material-icons.md-30 {
+	font-size: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.material-icons {
+		font-size: 20px;
+	}
+}
